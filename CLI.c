@@ -1,5 +1,5 @@
 /* 
- *	Simple serial based command line interface for driving LED or motors, relay and so on....
+ *  Simple serial based command line interface for driving LED or motors, relay and so on....
  *  CLI.c
  *  Author: Tibor Rojko
  */ 
@@ -18,7 +18,8 @@
  //help variables
  uint8_t maxLenght = 50;
  char CMD[10];
- char PARAM[10]; char buff[50];
+ char PARAM[10];
+ char buff[50];
 
  //Settings variables, actualy year-month-day, just for example
  uint16_t year;
@@ -86,8 +87,8 @@ static unsigned char receiveByte(void)
 	 uint8_t part = 0;
 	 while (i < (maxLength - 1)) {                   //prevent over-runs
 		 response = receiveByte();
-		 transmitByte(response);					 //echoing
-		 if (response == '\r') {                     //enter marks (\r) the end
+		 transmitByte(response);		 //echoing
+		 if (response == '\r') {                 //enter marks (\r) the end
 			 break;
 		 }
 		 if (response == '=')
