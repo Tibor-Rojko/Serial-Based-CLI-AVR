@@ -1,5 +1,5 @@
 /* 
- *	Simple serial based command line interface for driving LED or motors, relay and so on....
+ *  Simple serial based command line interface for driving LED or motors, relay and so on....
  *  CLI.h
  *  Author: Tibor Rojko
  */ 
