@@ -9,10 +9,7 @@
 #include "CLI.h"
 
 int main(void)
-{
-
-	DDRB |= (1 << PINB5);
-    
+{   
 	initCLI();
 
 	printString("Instructions:\r\n");
@@ -25,8 +22,7 @@ int main(void)
 
     while (1) 
     {
-		PORTB ^= (1 << PINB5);
-		_delay_ms(1000);
+
     }
 }
 
